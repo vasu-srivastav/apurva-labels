@@ -63,6 +63,7 @@ const mobileProductsList = document.getElementById('mobile-products-list');
 
 // Toggle Mobile Menu
 mobileMenuButton.addEventListener('click', () => {
+    console.log('Mobile menu button clicked');
     mobileMenu.classList.toggle('hidden');
 });
 
