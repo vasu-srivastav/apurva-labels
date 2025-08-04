@@ -1,0 +1,44 @@
+/* Custom Styles */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Scroll to Top Button visible on scroll */
+#scrollTopBtn.show {
+  display: flex !important;
+}
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-effect::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #0e6b55;
+    transition: width 0.4s ease-in-out;
+}
+
+.hover-effect:hover::after {
+    width: 100%;
+}
+
+
+@keyframes bounce-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-float {
+  animation: bounce-float 2s infinite ease-in-out;
+}

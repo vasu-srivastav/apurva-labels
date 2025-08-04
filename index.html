@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurva Labels | Barcode & Tags Products</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <nav class="bg-[#0e6b55] text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="#" class="flex items-center text-white text-xl font-bold">
+                            <img src="./assets/images/Screenshoal-removebg-preview.png" alt="Apurva Labels"
+                                class="h-8 w-auto mr-2">
+                            Apurva Labels
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a href="/index.html" class="hover:text-gray-300">Home</a>
+                        <!-- Products Dropdown -->
+                        <div class="relative group">
+                            <button class="hover:text-gray-300 flex items-center peer">
+                                Products
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown -->
+                            <div
+                                class="absolute left-0 top-full hidden peer-hover:flex group-hover:flex bg-white text-black  rounded-md shadow-lg z-50 p-4 pt-6 w-[400px] flex-wrap pointer-events-none peer-hover:pointer-events-auto group-hover:pointer-events-auto">
+                                <div class="w-1/2 space-y-1">
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Barcode Labels</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Barcode Ribbons</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Barcode Printers</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Pre-Printed Labels</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Thermal Ribbons</a>
+                                </div>
+                                <div class="w-1/2 space-y-1">
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Direct Thermal
+                                        Labels</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Chromo Labels</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Polyester Labels</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Blank Thermal Labels</a>
+                                    <a href="./inner.html" class="block px-2 py-1 hover-effect">Tamper Evident
+                                        Labels</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="#about" class="hover:text-gray-300">About</a>
+                        <a href="#faq" class="hover:text-gray-300">Faq</a>
+
+                        <a href="#"><button
+                                class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-[#0e6b55] transition">Features</button></a>
+
+                        <a href="#"><button
+                                class="bg-white text-[#0e6b55] px-4 py-2 rounded-full hover:bg-gray-200 transition">Contact
+                                Us</button></a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-[#0e6b55]">
+                <a href="./index.html" class="block px-4 py-2 hover:bg-[#0b5945]">Home</a>
+                <div>
+                    <button id="mobile-products-toggle"
+                        class="w-full text-left px-4 py-2 hover:bg-[#0b5945] flex justify-between items-center">
+                        Products
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="mobile-products-list" class="hidden pl-6">
+                        <a href="./inner.html" class="block py-1 text-sm">Barcode Labels</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Barcode Ribbons</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Barcode Printers</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Pre-Printed Labels</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Thermal Ribbons</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Direct Thermal Labels</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Chromo Labels</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Polyester Labels</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Blank Thermal Labels</a>
+                        <a href="./inner.html" class="block py-1 text-sm">Tamper Evident Labels</a>
+                    </div>
+                </div>
+                <a href="#about" class="block px-4 py-2 hover:bg-[#0b5945]">About</a>
+                <a href="#faq" class="block px-4 py-2 hover:bg-[#0b5945]">Faq</a>
+                <a href="#feature" class="block px-4 py-2 hover:bg-[#0b5945]">Features</a>
+                <a href="#contact" class="block px-4 py-2 hover:bg-[#0b5945]">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="bg-[#0e6b55] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between w-full">
+
+            <!-- Left Text Content -->
+            <div class="w-full md:w-1/2 space-y-6" data-aos="fade-right">
+                <p class="text-4xl md:text-5xl font-bold leading-tight">
+                    The best place <br>
+                    for your brand is <br>
+                    your product’s label
+                </p>
+                <p class="text-lg text-gray-200">
+                    We make your products stand out with premium barcode labels, ribbons & tags that ensure durability,
+                    clarity, and brand identity. Boost your operations with precision labeling.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#"><button
+                            class="bg-white text-[#0e6b55] px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">See
+                            a Demo</button></a>
+                    <a href="#"><button
+                            class="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0e6b55] transition">Explore
+                            Solutions</button></a>
+                </div>
+            </div>
+
+            <!-- Right Image Mockup -->
+            <div class="w-[90%] mx-auto md:w-1/2 mt-10 md:mt-0 flex justify-center relative" data-aos="fade-left">
+                <div class="relative bg-white rounded-3xl p-6 shadow-2xl transform rotate-6">
+                    <img src="./assets/images/barcode labels.jpg" alt="Product Mockup" class="rounded-xl">
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-gradient-to-r from-orange-400 to-pink-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-semibold">
+                        High-Quality Labels
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- INTEGRATIONS SECTION  -->
+    <section class="bg-[#0e6b55] w-full">
+        <section class="bg-[#17413a] w-[97%] mx-auto py-6 rounded-t-lg">
+        <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between text-white text-sm">
+                <p class="mb-4 md:mb-0">See how Apurva Labels seamlessly integrates with your existing product line
+                    experience</p>
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
+            <div
+                class="flex flex-wrap items-center justify-center md:justify-between mt-6 ">
+                <img src="./assets/images/Screenshoal.png" alt="Yoto" class="w-16 m-2 md:w-24">
+                <img src="./assets/images/Screenshoal.png" alt="Invate" class="w-16 m-2 md:w-24">
+                <img src="./assets/images/Screenshoal.png" alt="Klyo" class="w-16 m-2  md:w-24">
+                <img src="./assets/images/Screenshoal.png" alt="Attive" class="w-16 m-2 md:w-24">
+                <img src="./assets/images/Screenshoal.png" alt="Sho" class="w-16 m-2 md:w-24">
+                <img src="./assets/images/Screenshoal.png" alt="Gorgias" class="w-16 m-2 md:w-24">
+                <img src="./assets/images/Screenshoal.png" alt="Smile" class="w-16 m-2 md:w-24">
+                <img src="./assets/images/Screenshoal.png" alt="Adoe" class="w-16 m-2 md:w-24">
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Feature Section -->
+    <section id="features">
+        <!-- You’ll code this later -->
+    </section>
+
+    <!-- Products Showcase -->
+    <section id="products">
+        <!-- You’ll code this later -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <!-- You’ll code this later -->
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <!-- You’ll code this later -->
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <!-- You’ll code this later -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <!-- You’ll code this later -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <!-- You’ll code this later -->
+    </footer>
+
+    <!-- WhatsApp Floating Button with Animation -->
+    <!-- <a href="https://wa.me/919999999999" target="_blank"
+        class="fixed bottom-5 left-5 bg-green-500 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-all z-[51] animate-bounce-float">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a> -->
+
+    <!-- Scroll to Top Button -->
+    <!-- <button id="scrollTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-white text-[#0e6b55] p-3 rounded-full shadow-lg hover:scale-110 transition-all z-[50]">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button> -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/script.js"></script>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
