@@ -64,6 +64,30 @@ var swiper = new Swiper(".myProductSwiper", {
   },
 });
 
+var swiper = new Swiper(".myIntegrationSlider", {
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 3,
+  spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 50,
+    },
+  },
+});
+
 var swiper = new Swiper(".myProductsSwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
