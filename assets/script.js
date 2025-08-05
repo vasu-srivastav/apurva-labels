@@ -42,7 +42,7 @@ const heroSwiper = new Swiper(".hero-swiper", {
 var swiper = new Swiper(".testimonialSwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
-   loop: true,
+  loop: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -52,7 +52,42 @@ var swiper = new Swiper(".testimonialSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+var swiper = new Swiper(".myProductSwiper", {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
+var swiper = new Swiper(".myProductsSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+    1024: {
+      slidesPerView: 3.5,
+    },
+  },
+});
 
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
@@ -79,21 +114,21 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
 
 // FAQ Toggle Logic
 // Accordion Toggle Logic (One Open at a Time)
-const faqButtons = document.querySelectorAll('.faq-toggle');
+const faqButtons = document.querySelectorAll(".faq-toggle");
 
-faqButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        faqButtons.forEach(btn => {
-            if (btn !== button) {
-                btn.nextElementSibling.classList.add('hidden');
-                btn.querySelector('span').classList.remove('rotate-45');
-            }
-        });
-
-        const content = button.nextElementSibling;
-        const icon = button.querySelector('span');
-
-        content.classList.toggle('hidden');
-        icon.classList.toggle('rotate-45');
+faqButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    faqButtons.forEach((btn) => {
+      if (btn !== button) {
+        btn.nextElementSibling.classList.add("hidden");
+        btn.querySelector("span").classList.remove("rotate-45");
+      }
     });
+
+    const content = button.nextElementSibling;
+    const icon = button.querySelector("span");
+
+    content.classList.toggle("hidden");
+    icon.classList.toggle("rotate-45");
+  });
 });

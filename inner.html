@@ -185,79 +185,269 @@
 
     </header>
 
+    <!-- Breadcrumb Parallax Section -->
+    <section class="relative h-48 md:h-64 flex items-center justify-center overflow-hidden">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0">
+            <div class="bg-fixed bg-center bg-cover w-full h-full"
+                style="background-image: url('./assets/images/Screaenshoal.png');"></div>
+            <div class="absolute inset-0 bg-black/50"></div> <!-- Dark Overlay -->
+        </div>
 
-    <!-- HERO SECTION -->
-    <section class="bg-[#0e6b55] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between w-full">
+        <!-- Breadcrumb Content -->
+        <div class="relative z-10 text-center text-white">
+            <p class="text-3xl md:text-4xl font-bold">Products</p>
+            <nav class="mt-2">
+                <ol class="flex justify-center space-x-2 text-sm md:text-base">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li>/</li>
+                    <li class="text-gray-300">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
-            <!-- Left Text Content -->
-            <div class="w-full md:w-1/2 space-y-6" data-aos="fade-right">
-                <p class="text-4xl md:text-5xl font-bold leading-tight">
-                    The best place <br>
-                    for your brand is <br>
-                    your product’s label
-                </p>
-                <p class="text-lg text-gray-200">
-                    We make your products stand out with premium barcode labels, ribbons & tags that ensure durability,
-                    clarity, and brand identity. Boost your operations with precision labeling.
-                </p>
-                <div class="flex space-x-4">
-                    <a href="#"><button
-                            class="bg-white text-[#0e6b55] px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">See
-                            a Demo</button></a>
-                    <a href="#"><button
-                            class="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0e6b55] transition">Explore
-                            Solutions</button></a>
+    <!-- Product Description Section -->
+    <section class="py-16  relative overflow-hidden" data-scroll-section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Product Image Slider (Left) -->
+            <div class="w-full md:w-1/3" data-scroll data-scroll-speed="-1">
+                <div class="swiper myProductSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pScreenshot_1.png" alt="Product Image"
+                                class="rounded-xl shadow-md w-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/ooScreenshot_1.png" alt="Product Image"
+                                class="rounded-xl shadow-md w-full object-cover">
+                        </div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination mt-4"></div>
                 </div>
+                <!-- share options -->
+                <section class="py-10">
+                    <div class="max-w-4xl mx-auto px-4">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+
+                            <!-- Share Button -->
+                            <div class="flex items-center gap-3 mb-6 md:mb-0">
+                                <i class="fa fa-share text-2xl text-black"></i>
+                                <span class="text-xl font-semibold text-black">Share On</span>
+                            </div>
+
+                            <!-- Social Share Buttons -->
+                            <div class="flex gap-3 flex-wrap">
+                                <button data-sharer="facebook" data-url="https://yourwebsite.com"
+                                    data-title="Checkout this awesome product offered by Company"
+                                    class="w-8 h-8 bg-blue-800 text-white rounded flex items-center justify-center">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button data-sharer="twitter" data-url="https://yourwebsite.com"
+                                    class="w-8 h-8 bg-blue-500 text-white rounded flex items-center justify-center">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button data-sharer="whatsapp" data-url="https://yourwebsite.com"
+                                    class="w-8 h-8 bg-green-500 text-white rounded flex items-center justify-center">
+                                    <i class="fab fa-whatsapp"></i>
+                                </button>
+                                <button data-sharer="linkedin" data-url="https://yourwebsite.com"
+                                    class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                                <button data-sharer="email" data-title="Product Details" data-subject="Check this out!"
+                                    class="w-8 h-8 bg-orange-600 text-white rounded flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </section>
             </div>
 
-            <!-- Right Image Mockup -->
-            <div class="w-[90%] mx-auto md:w-[45%] mt-10 md:mt-0 flex justify-center relative" data-aos="fade-left">
-                <div class="relative bg-white rounded-3xl p-6 shadow-2xl transform rotate-6">
-                    <img src="./assets/images/barcode labels.jpg" alt="Product Mockup" class="rounded-xl">
-                    <div
-                        class="absolute -bottom-6 -left-6 bg-gradient-to-r from-orange-400 to-pink-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-semibold">
-                        High-Quality Labels
-                    </div>
-                </div>
+            <!-- Product Description (Right) -->
+            <div class="w-full md:w-2/3 relative overflow-hidden" data-scroll data-scroll-speed="1">
+                <img src="assets/images/ooScreenshot_1.png" alt="Background"
+                    class="absolute left-0 top-1/2 -translate-y-1/4  opacity-20 blur-sm z-[10] pointer-events-none select-none transition-all duration-1000 ease-in-out" />
+                <p class="text-3xl font-bold text-[#0e6b55] mb-4">Premium Barcode Labels</p>
+
+                <p class="text-gray-600 mb-6">
+                    Our high-quality barcode labels are designed for smooth printing and superior durability, ensuring
+                    seamless inventory management and product tracking. Available in various sizes and materials, these
+                    labels offer excellent adhesive strength for diverse applications.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Our high-quality barcode labels are designed for smooth printing and superior durability, ensuring
+                    seamless inventory management and product tracking. Available in various sizes and materials, these
+                    labels offer excellent adhesive strength for diverse applications.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Our high-quality barcode labels are designed for smooth printing and superior durability, ensuring
+                    seamless inventory management and product tracking. Available in various sizes and materials, these
+                    labels offer excellent adhesive strength for diverse applications.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Our high-quality barcode labels are designed for smooth printing and superior durability, ensuring
+                    seamless inventory management and product tracking. Available in various sizes and materials, these
+                    labels offer excellent adhesive strength for diverse applications.
+                </p>
+
+
+                <!-- <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-700">
+                    <svg class="w-5 h-5 text-[#0e6b55] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Durable Adhesive & Waterproof Finish
+                </li>
+                <li class="flex items-center text-gray-700">
+                    <svg class="w-5 h-5 text-[#0e6b55] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Compatible with All Barcode Printers
+                </li>
+                <li class="flex items-center text-gray-700">
+                    <svg class="w-5 h-5 text-[#0e6b55] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Customizable Sizes & Shapes
+                </li>
+            </ul> -->
+
+                <button class="bg-[#0e6b55] text-white px-6 py-3 rounded-full hover:bg-[#0b5945] transition">
+                    Get a Quote
+                </button>
             </div>
 
         </div>
     </section>
 
-    <!-- INTEGRATIONS SECTION  -->
-    <section class="bg-[#0e6b55] w-full relative overflow-hidden">
-        <section class="bg-[#17413a] w-[97%] mx-auto py-6 rounded-t-lg">
-            <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row items-center justify-between text-white text-sm">
-                    <p class="mb-4 md:mb-0">See how Apurva Labels seamlessly integrates with your existing product line
-                        experience</p>
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </div>
-                <div class="flex flex-wrap items-center justify-center md:justify-between mt-6 ">
-                    <img src="./assets/images/Screenshoal.png" alt="Yoto" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Invate" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Klyo" class="w-20 m-2  md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Attive" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Sho" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Gorgias" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Smile" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Adoe" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                </div>
-            </div>
-        </section>
+    <!-- Products Showcase Slider Section -->
+    <section id="products" class="bg-[#f8f7f4] py-12" data-scroll-section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-3xl md:text-3xl font-mono font-semibold underline mb-12">All Product</p>
 
+            <!-- Swiper Slider Wrapper -->
+            <div class="swiper myProductsSwiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+
+                    <!-- Product Card Slide -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Product"
+                                class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Labels</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">Durable and customizable labels for product
+                                identification and scanning.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Ribbons</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">High-quality thermal ribbons for sharp
+                                printing and durability.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Product"
+                                class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Labels</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">Durable and customizable labels for product
+                                identification and scanning.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Ribbons</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">High-quality thermal ribbons for sharp
+                                printing and durability.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Product"
+                                class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Labels</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">Durable and customizable labels for product
+                                identification and scanning.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Ribbons</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">High-quality thermal ribbons for sharp
+                                printing and durability.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Product"
+                                class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Labels</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">Durable and customizable labels for product
+                                identification and scanning.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-95 transition-transform">
+                            <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
+                            <p class="font-semibold mb-1 text-gray-900">Barcode Ribbons</p>
+                            <p class="text-gray-600 mb-4 text-sm flex-grow">High-quality thermal ribbons for sharp
+                                printing and durability.</p>
+                            <a href="#" class="self-start"><button
+                                    class="border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">View
+                                    More</button></a>
+                        </div>
+                    </div>
+
+
+                    <!-- ... -->
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination mt-12"></div>
+            </div>
+        </div>
     </section>
 
     <!-- Feature Section -->
@@ -274,7 +464,14 @@
             </div>
             <!-- Illustration (Right in desktop, top in mobile) -->
             <div class="flex flex-col md:flex-row items-center mb-10">
-                <div class="order-2 md:order-1 w-full md:w-2/3">
+                <div class="order-1 md:order-1 w-full md:w-1/3 flex justify-center items-center mb-8 md:mb-0 md:pr-10">
+                    <!-- <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Barcode demo gif"
+                        class="rounded-lg shadow-lg border border-gray-200"> -->
+                    <video src="./assets/video/Shopping Tag.mp4" autoplay muted loop
+                        class="rounded-lg shadow-lg border border-gray-200" data-aos="fade-right"
+                        data-aos-delay="300"></video>
+                </div>
+                <div class="order-2 md:order-2 w-full md:w-2/3">
                     <!-- Feature Cards -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <!-- Feature 1 -->
@@ -322,188 +519,78 @@
                     </div>
                 </div>
 
-                <div class="order-1 md:order-2 w-full md:w-1/3 flex justify-center items-center mb-8 md:mb-0 md:pl-10">
-                    <!-- <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Barcode demo gif"
-                        class="rounded-lg shadow-lg border border-gray-200"> -->
-                    <video src="./assets/video/Barcode Scanner.mp4" autoplay muted loop
-                        class="rounded-lg shadow-lg border border-gray-200" data-aos="fade-left"
-                        data-aos-delay="300"></video>
-                </div>
+                
             </div>
         </div>
     </section>
 
 
-    <!-- Products Showcase Section -->
-    <section id="products" class="bg-[#f8f7f4] py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Heading -->
-            <!-- <p class="text-3xl font-semibold text-gray-800 mb-8">Frequently Asked Questions</p> -->
-            <p class="text-center text-3xl md:text-3xl font-mono font-semibold underline mb-12">All Product</p>
+    <!-- Marketplace Section -->
+    <section id="marketplace"
+        class="w-[95%] mt-10 pt-10 pb-20 bg-gradient-to-b from-[#edf0f5] to-white rounded-2xl mx-auto overflow-hidden relative"
+        data-scroll-section>
 
-            <!-- Products Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Floating Decorations -->
+        <img src="./assets/images/ooScreenshot_1.png" alt="Left Floating"
+            class="absolute left-0 top-1/2 -translate-y-1/4 opacity-20 blur-sm z-0 pointer-events-none select-none">
+        <img src="./assets/images/ooScreenshot_1.png" alt="Right Floating"
+            class="absolute right-0 bottom-1/2 translate-y-1/4 opacity-20 blur-sm z-0 pointer-events-none select-none">
 
-                <!-- Product Card -->
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Barcode Labels</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        Durable and customizable labels for product identification and scanning.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
-
-                <!-- Product Card -->
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Barcode Ribbons</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        High-quality thermal ribbons for sharp printing and durability.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
-
-                <!-- Product Card -->
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/pScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Barcode Printers</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        Reliable printers for producing clear barcode labels on demand.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
-
-                <!-- Product Card -->
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Thermal Labels</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        Direct thermal and thermal transfer labels for different applications.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
-
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Pre-Printed Labels</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        Customized pre-printed labels ready for various industrial uses.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
-
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Chromo Labels</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        High-quality chromo finishing labels with superior gloss and durability.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
-
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/supplies-p-3600.jpg.imgw.1200.1200.jpg" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Polyester Labels</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        Tough polyester labels designed to withstand harsh environments.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
-
-                <div
-                    class="bg-white border border-gray-300 rounded-lg p-6 shadow-sm flex flex-col hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/ooScreenshot_1.png" alt="Product" class="mb-4 mx-auto">
-                    <p class="font-semibold mb-1 text-gray-900">Tamper Evidence Labels</p>
-                    <p class="text-gray-600 mb-4 text-sm flex-grow">
-                        Security labels that reveal tampering attempts to protect your products.
-                    </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="self-start rounded-full p-0"><button
-                            class="self-start border border-[#0e6b55] text-[#0e6b55] rounded-full px-4 py-1 hover:bg-[#0e6b55] hover:text-white transition">
-                            View More
-                        </button></a>
-                </div>
+        <!-- Header -->
+        <div class="text-center mb-12 z-10 relative" data-aos="fade-up">
+            <div class="flex items-center justify-center gap-4">
+                <p class="text-3xl md:text-4xl font-bold text-[#0e6b55]">Marketplace</p>
             </div>
+            <p class="text-gray-700 mt-2">Explore categories and request a quote for the products you need.</p>
         </div>
-    </section>
 
+        <!-- Grid of Quote Buttons -->
+        <div class="max-w-6xl mx-auto px-4 z-10 relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-2 gap-6"
+            data-aos="fade-up">
 
-    <!-- About Section -->
-    <section id="about" class="bg-[#0e6b55] py-16 relative overflow-hidden">
-        <img src="assets/images/Screaenshoal.png" alt="Background"
-            class="absolute left-0 top-1/2 -translate-y-1/4  opacity-20 blur-sm z-[10] pointer-events-none select-none transition-all duration-1000 ease-in-out" />
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start px-4 sm:px-6 lg:px-8">
-            <!-- Left: Text Navigation -->
-            <div class="md:w-2/3 w-full mb-8 md:mb-0 md:pr-10 text-white" data-aos="fade-right">
-                <p class="text-3xl md:text-3xl font-semibold mb-8 md:mb-10 text-center md:text-left  ">
-                    About Us
-                </p>
-                <div class="text-gray-200 text-lg leading-tight space-y-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquam aut? Ullam qui modi odio,
-                        distinctio molestiae aperiam exercitationem! Reprehenderit rem quisquam, repellendus
-                        voluptatibus repudiandae neque aliquid voluptatum, architecto dolore, harum eos totam. Id quidem
-                        libero itaque modi sequi totam recusandae cupiditate. Corporis accusamus consectetur nam
-                        asperiores! Rem, nobis excepturi! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Corporis nisi quasi accusamus magnam blanditiis pariatur sint ipsum cupiditate autem
-                        exercitationem quos nulla eaque consequatur laboriosam impedit soluta, eligendi maxime sequi
-                        magni. Alias voluptatem, vel possimus commodi excepturi totam repellendus unde deleniti magnam
-                        tempore culpa repellat!</p>
-                </div>
-            </div>
-
-
-            <!-- Right: Demo/Image/Box with Stacked Images -->
-            <div class="md:w-1/3 w-full flex justify-center md:justify-end">
-                <div class=" p-8 max-w-md w-full flex flex-col items-center" data-aos="fade-up">
-                    <!-- <p class="text-[#0e6b55] font-semibold mb-4 text-lg text-center">Apurva Labels</p> -->
-                    <div class="relative w-40 h-72">
-                        <!-- Top Image -->
-                        <img src="./assets/images/Screenshoal-removebg-preview.png" alt="Apurva Labels"
-                            class="absolute left-1/2 bottom-2/3 w-32 h-32 object-contain bg-white rounded-lg shadow-lg -translate-x-1/2 -rotate-15 hover:z-[50] z-[20]"
-                            style="transform: translateX(-50%) rotate(-12deg);" />
-                        <!-- Middle Image -->
-                        <img src="./assets/images/Screenshoal-removebg-preview.png" alt="Apurva Labels"
-                            class="absolute left-1/3 bottom-1/4 w-36 h-36 object-contain bg-green-200 rounded-lg shadow-lg -translate-x-1/2 hover:z-[50] z-[30] "
-                            style="transform: translateX(-50%) rotate(0deg);" />
-                        <!-- Bottom Image -->
-                        <img src="./assets/images/Screenshoal-removebg-preview.png" alt="Apurva Labels"
-                            class="absolute left-1/2 bottom-0 w-32 h-32 object-contain bg-white rounded-lg shadow-lg -translate-x-1/2 rotate-15 hover:z-[50] z-[40]"
-                            style="transform: translateX(-50%) rotate(15deg);" />
-                    </div>
-                </div>
-            </div>
+            <!-- Category Button -->
+            <a href="#contact"
+                class="group  w-full  py-6 px-6 text-center bg-[#1A1A1A] rounded-xl border border-[#4ac89d]/30 shadow-lg hover:shadow-[#4ac89d]/50 transform hover:scale-105 transition-all duration-300 backdrop-blur-md focus:outline-none text-[#4ac89d] text-xl font-semibold hover:underline">
+                Barcode Labels
+            </a>
+            <a href="#contact"
+                class="group  w-full  py-6 px-6 text-center bg-[#1A1A1A] rounded-xl border border-[#4ac89d]/30 shadow-lg hover:shadow-[#4ac89d]/50 transform hover:scale-105 transition-all duration-300 backdrop-blur-md focus:outline-none text-[#4ac89d] text-xl font-semibold hover:underline">
+                Barcode Labels
+            </a>
+            <a href="#contact"
+                class="group  w-full  py-6 px-6 text-center bg-[#1A1A1A] rounded-xl border border-[#4ac89d]/30 shadow-lg hover:shadow-[#4ac89d]/50 transform hover:scale-105 transition-all duration-300 backdrop-blur-md focus:outline-none text-[#4ac89d] text-xl font-semibold hover:underline">
+                Barcode Labels
+            </a>
 
         </div>
-    </section>
+        <div class="max-w-6xl mx-auto px-4 z-10 relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-2 gap-6"
+            data-aos="fade-up">
 
+            <!-- Category Button -->
+            <a href="#contact"
+                class="group text-white w-full font-semibold py-6 px-6 text-center bg-gradient-to-tr from-[#0e6b55] to-[#4ac89d] rounded-xl border border-[#4ac89d]/30 shadow-lg hover:shadow-[#4ac89d]/50 transform hover:scale-105 transition-all duration-300 backdrop-blur-md hover:from-[#0b5945] hover:to-[#3ac89d] focus:outline-none">
+                Barcode Ribbons
+            </a>
+
+            <a href="#contact"
+                class="group text-white w-full font-semibold py-6 px-6 text-center bg-gradient-to-tr from-[#0e6b55] to-[#4ac89d] rounded-xl border border-[#4ac89d]/30 shadow-lg hover:shadow-[#4ac89d]/50 transform hover:scale-105 transition-all duration-300 backdrop-blur-md hover:from-[#0b5945] hover:to-[#3ac89d] focus:outline-none">
+                Barcode Ribbons
+            </a>
+
+            <a href="#contact"
+                class="group text-white w-full font-semibold py-6 px-6 text-center bg-gradient-to-tr from-[#0e6b55] to-[#4ac89d] rounded-xl border border-[#4ac89d]/30 shadow-lg hover:shadow-[#4ac89d]/50 transform hover:scale-105 transition-all duration-300 backdrop-blur-md hover:from-[#0b5945] hover:to-[#3ac89d] focus:outline-none">
+                Barcode Printers
+            </a>
+
+            <a href="#contact"
+                class="group text-white w-full font-semibold py-6 px-6 text-center bg-gradient-to-tr from-[#0e6b55] to-[#4ac89d] rounded-xl border border-[#4ac89d]/30 shadow-lg hover:shadow-[#4ac89d]/50 transform hover:scale-105 transition-all duration-300 backdrop-blur-md hover:from-[#0b5945] hover:to-[#3ac89d] focus:outline-none">
+                Thermal Labels
+            </a>
+
+
+        </div>
+
+    </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="bg-[#e6f2f0] py-16 relative overflow-hidden">
@@ -687,7 +774,6 @@
         </div>
     </section>
 
-
     <!-- Contact Section -->
     <section id="contact" class="bg-[#eaf3f1] py-16 relative overflow-hidden">
         <!-- <p class="text-3xl font-semibold text-gray-800 mb-8 text-center ">Contact Us</p> -->
@@ -768,7 +854,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Footer Section -->
     <footer id="footer" class="bg-[#0e6b55] text-white py-16">
@@ -862,6 +947,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Custom JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
     <script src="./assets/script.js"></script>
 
 
