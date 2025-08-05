@@ -72,13 +72,17 @@
     </div>
 
     <!-- Navbar -->
-    <header id="navbar">
-        <nav class="bg-[#0e6b55] text-white relative border-b-2 shadow-md border-b-[#4ac89d] py-2">
+    <header class="relative z-50" id="navbar">
+        <!-- Background Shape -->
+        <div class="absolute top-0 left-0 w-full h-full bg-white z-0">
+            <div class="w-full h-full bg-[#0e6b55] clipbar-diagonal"></div>
+        </div>
+        <nav class=" text-white relative border-b-2 shadow-md border-b-[#4ac89d] py-2">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
                     <div class="flex-shrink-0">
-                        <a href="#" class="flex items-center text-white text-xl font-bold">
+                        <a href="#" class="flex items-center text-black text-2xl font-bold">
                             <img src="./assets/images/Screenshoal-removebg-preview.png" alt="Apurva Labels"
                                 class="h-16 w-auto mr-2">
                             Apurva Labels
@@ -178,7 +182,9 @@
                 <a href="#contact" class="block px-4 py-2 hover:bg-[#0b5945]">Contact</a>
             </div>
         </nav>
+
     </header>
+
 
     <!-- HERO SECTION -->
     <section class="bg-[#0e6b55] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -232,21 +238,21 @@
                     </svg>
                 </div>
                 <div class="flex flex-wrap items-center justify-center md:justify-between mt-6 ">
-                    <img src="./assets/images/Screenshoal.png" alt="Yoto" class="w-16 m-2 md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Yoto" class="w-20 m-2 md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Invate" class="w-16 m-2 md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Invate" class="w-20 m-2 md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Klyo" class="w-16 m-2  md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Klyo" class="w-20 m-2  md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Attive" class="w-16 m-2 md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Attive" class="w-20 m-2 md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Sho" class="w-16 m-2 md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Sho" class="w-20 m-2 md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Gorgias" class="w-16 m-2 md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Gorgias" class="w-20 m-2 md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Smile" class="w-16 m-2 md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Smile" class="w-20 m-2 md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Adoe" class="w-16 m-2 md:w-24" data-aos="fade-in"
+                    <img src="./assets/images/Screenshoal.png" alt="Adoe" class="w-20 m-2 md:w-24" data-aos="fade-in"
                         data-aos-delay="100">
                 </div>
             </div>
@@ -686,7 +692,7 @@
             <div data-aos="fade-right">
                 <img src="assets/images/ooScreenshot_1.png" alt="Background"
                     class="absolute left-0 top-1/2 -translate-y-1/4  opacity-20 blur-sm z-[10] pointer-events-none select-none transition-all duration-1000 ease-in-out" />
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+                <p class="text-3xl font-bold text-gray-800 mb-4">Get in Touch</p>
                 <p class="text-gray-600 mb-6">We're here to help with all your barcode, labels & tag solutions. Reach
                     out to us!</p>
 
@@ -730,7 +736,7 @@
                 <!-- Contact Form Card -->
                 <div data-aos="fade-left"
                     class="relative z-10  p-8 border border-gray-300 rounded-2xl shadow-2xl max-w-md w-full">
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Contact Form</h3>
+                    <p class="text-2xl font-semibold mb-4 text-gray-800">Contact Form</p>
                     <form action="#" method="POST" class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-600">Name</label>
@@ -765,7 +771,7 @@
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
             <!-- Left Block -->
             <div class="md:col-span-1">
-                <h2 class="text-2xl font-bold mb-4">Join the revolution</h2>
+                <p class="text-2xl font-bold mb-4">Join the revolution</p>
                 <p class="text-sm text-gray-300 mb-6">
                     Take control of your labeling and barcode solutions. Deliver professional-quality tags with maximum
                     efficiency.
@@ -782,7 +788,7 @@
 
             <!-- About Us -->
             <div>
-                <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                <p class="text-lg font-semibold mb-4">About Us</p>
                 <ul class="space-y-2 text-sm text-gray-300">
                     <li><a href="#features" class="hover:text-white">Features</a></li>
                     <li><a href="#products" class="hover:text-white">Product</a></li>
@@ -795,7 +801,7 @@
 
             <!-- Merchants -->
             <div>
-                <h3 class="text-lg font-semibold mb-4">Featured Products</h3>
+                <p class="text-lg font-semibold mb-4">Featured Products</p>
                 <ul class="space-y-2 text-sm text-gray-300">
                     <li><a href="#" class="hover:text-white">Products 1</a></li>
                     <li><a href="#" class="hover:text-white">Products 2</a></li>
@@ -807,7 +813,7 @@
 
             <!-- Shoppers -->
             <div>
-                <h3 class="text-lg font-semibold mb-4">Shoppers</h3>
+                <p class="text-lg font-semibold mb-4">Shoppers</p>
                 <ul class="space-y-2 text-sm text-gray-300">
                     <li><a href="#" class="hover:text-white">Help</a></li>
                     <li><a href="#" class="hover:text-white">How It Works</a></li>
