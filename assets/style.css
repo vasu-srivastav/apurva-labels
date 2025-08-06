@@ -9,25 +9,24 @@ body {
   display: flex !important;
 }
 .hover-effect {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .hover-effect::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background: #0e6b55;
-    transition: width 0.4s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #0e6b55;
+  transition: width 0.4s ease-in-out;
 }
 
 .hover-effect:hover::after {
-    width: 100%;
+  width: 100%;
 }
-
 
 @keyframes bounce-float {
   0%,
@@ -75,10 +74,10 @@ body {
   }
 }
 .clipbar-diagonal {
-        clip-path: polygon(43% 0, 100% 0, 100% 100%, 37% 100%);
-    }
+  clip-path: polygon(43% 0, 100% 0, 100% 100%, 47% 100%);
+}
 
-    .swiper-pagination {
+.swiper-pagination {
   position: relative !important;
-  margin-top: 12px; 
+  margin-top: 12px;
 }

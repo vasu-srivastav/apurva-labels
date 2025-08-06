@@ -72,9 +72,9 @@
     </div>
 
     <!-- Navbar -->
-    <header class="relative z-50" id="navbar">
+    <header class="relative z-50b" id="navbar">
         <!-- Background Shape -->
-        <div class="absolute top-0 left-0 w-full h-full bg-white z-0">
+        <div class="absolute top-0 left-0 w-full h-full bg-white z-0 hidden md:block">
             <div class="w-full h-full bg-[#0e6b55] clipbar-diagonal"></div>
         </div>
         <nav class=" text-white relative border-b-2 shadow-md border-b-[#4ac89d] py-2">
@@ -82,7 +82,8 @@
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
                     <div class="flex-shrink-0">
-                        <a href="#" class="flex items-center text-black text-2xl font-bold">
+                        <!-- text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4 -->
+                        <a href="#" class="flex items-center text-gray-900 text-3xl font-bold">
                             <img src="./assets/images/Screenshoal-removebg-preview.png" alt="Apurva Labels"
                                 class="h-16 w-auto mr-2">
                             Apurva Labels
@@ -141,7 +142,7 @@
 
                     <!-- Mobile Menu Button -->
                     <div class="md:hidden flex items-center">
-                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <button id="mobile-menu-button" class="text-black focus:outline-none">
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -226,49 +227,16 @@
         </div>
     </section>
 
-    <!-- INTEGRATIONS SECTION  -->
-    <!-- <section class="bg-[#0e6b55] w-full relative overflow-hidden">
-        <section class="bg-[#17413a] w-[97%] mx-auto py-6 rounded-t-lg">
-            <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row items-center justify-between text-white text-sm">
-                    <p class="mb-4 md:mb-0">See how Apurva Labels seamlessly integrates with your existing product line
-                        experience</p>
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </div>
-                <div class="flex flex-wrap items-center justify-center md:justify-between mt-6 ">
-                    <img src="./assets/images/Screenshoal.png" alt="Yoto" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Invate" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Klyo" class="w-20 m-2  md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Attive" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Sho" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Gorgias" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Smile" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                    <img src="./assets/images/Screenshoal.png" alt="Adoe" class="w-20 m-2 md:w-24" data-aos="fade-in"
-                        data-aos-delay="100">
-                </div>
-            </div>
-        </section>
-
-    </section> -->
-
+    
     <!-- INTEGRATIONS SECTION -->
 <section class="bg-[#0e6b55] w-full relative overflow-hidden">
     <section class="bg-[#17413a] w-[97%] mx-auto py-6 rounded-t-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between text-white text-sm">
                 <p class="mb-4 md:mb-0">See how Apurva Labels seamlessly integrates with your existing product line experience</p>
-                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
+                </svg> -->
             </div>
 
             <!-- Swiper Slider -->
@@ -385,8 +353,7 @@
     <section id="products" class="bg-[#f8f7f4] py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Heading -->
-            <!-- <p class="text-3xl font-semibold text-gray-800 mb-8">Frequently Asked Questions</p> -->
-            <p class="text-center text-3xl md:text-3xl font-mono font-semibold underline mb-12">All Product</p>
+            <p class="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">All Product</p>
 
             <!-- Products Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
